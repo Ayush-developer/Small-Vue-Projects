@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Alumni+Sans:wght@100;200&family=Cairo:wght@200&family=Caveat:wght@700&family=Comfortaa:wght@700&family=Fuzzy+Bubbles&family=Jura:wght@300;700&family=Poiret+One&family=Proza+Libre&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <section class="section habitat">
+    <h1 class="is-size-2 has-text-centered has-text-primary is-uppercase">Hello,</h1>
+    <h2 class="is-size-3 has-text-centered has-text-primary-dark is-bold">This Counter is Made Exclusively using BULMA CSS and VUE JS.</h2>
+  </section>
+  <section class="section program" id="breakthroughs">
+      <div class="keys">
+        <button v-on:click="add()"  class="button is-primary is-outlined mx-6 ">Add</button>
+        <button v-on:click="reduce()" class="button is-link is-outlined mx-6">Subtract</button>
+        <button v-on:click="counter = 0"class="button is-info is-outlined mx-6">Reset</button>
+      </div>
+   
+
+  
+      <section class="section">
+    
+        <h2 class="is-size-3 has-text-centered has-text-primary-dark is-bold">{{ counter }}</h2>
+      </section>
+  </section>
+  
+
+
+  
+    
+</body>
+</html>
+
