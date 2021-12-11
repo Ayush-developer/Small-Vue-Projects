@@ -1,0 +1,98 @@
+.spaces{
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    margin-top: 20px;
+}
+*{
+    margin: auto;
+    
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d12026');
+}
+.mids{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+.todo{
+    background-color: rgba(1, 9, 32,0.8);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 30px;
+    /* backdrop-filter: blur(13px) saturate(159%);
+    -webkit-backdrop-filter: blur(13px) saturate(159%);
+    background-color: rgba(17, 25, 40, 0.37);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+}
+.porjes{
+    margin-bottom:35px;
+}
+
+input{
+    height: 30px;
+    width: 75%;
+    margin-right: 20px;
+    border: none;
+    border-radius: 3px;
+}
+.todo-button{
+
+    width: 15%;
+    background-color: #889FE0;
+    height: 35px;
+    border:none;
+    border-radius:10px;
+    color: white;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 20px;
+    
+    font-weight: 600;
+    transform: translateY(3px);
+    transition:all 0.5s;
+    margin-left: 26px;
+}
+.todo-button:active{
+    transform: translateY(6px);
+}
+
+.warnings{
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: white;
+    font-style: italic;
+    margin-top: 25px;
+}
+.list{
+    margin-top: 25px;
+    
+    /* width: 70%; */
+    
+    width: 50%;
+    
+    
+}
+ul{
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+   
+}
+.removed{
+   
+    width: 50%;
+    margin-top: 25px;
+    
+}
+.actuals{
+    display:flex;
+}
+.far{
+    height: 50px;
+}
+.has{
+    margin-top:50px;
+    font-family: 'Poiret One', cursive;
+    text-align:center;
+}

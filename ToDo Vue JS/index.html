@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Alumni+Sans:wght@100;200&family=Cairo:wght@200&family=Caveat:wght@700&family=Comfortaa:wght@700&family=Fuzzy+Bubbles&family=Jura:wght@300;700&family=Poiret+One&family=Proza+Libre&family=Rampart+One&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/516ef09a64.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+    
+        <h1 class="spaces">Todo Application</h1>
+        <h3  class="spaces porjes">                          Powered by Vue JS</h3>
+
+        <section class="mids">
+           <div class="todo">
+               <input   v-on:input="takeinputs" type="text">
+               
+               <button  v-on:click="adddatas" class="todo-button">Add</button>
+
+               <h4  v-if="datas.length === 0" class="warnings" >
+                Please Add some Items to Your ToDo List
+               </h4>
+               <div class="actuals">
+                   <div class="list">
+                    <ul v-if="datas.length != 0" v-on:click="removed">
+                        <li  v-for="dats in datas">{{ dats }}</li>
+                    </ul>
+                    </div>
+                    
+                   
+                   
+               </div>
+           </div>
+           
+           
+        </section>
+        <h5 class=" has">Basic ToDo . All rights reserved.Source code Licensed by ABCd.com </h5>
+    
+</body>
+</html>
