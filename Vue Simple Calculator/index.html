@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:wght@200;500;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/vue@next" defer></script>
+<script src="app.js" defer></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <div id="wonk">
+    <div class="header">
+      <h1 class="news">
+        Calculator 
+      </h1>
+      <h3 class="new">
+        For Vue Devs by Vue Devs
+      </h3>
+     </div>
+     <div class="body">
+        <div class="box"><h2 class="operator"  @click="addSelect">Add</h2></div>
+        <div class="box"><h2 class="operator"  @click="subSelect">Sub</h2></div>
+        <div class="box"><h2 class="operator"  @click="mulSelect">Mul</h2></div>
+        <div class="box"><h2 class="operator"  @click="divSelect">Div</h2></div>
+     </div>
+     <div class="inputs" >
+       <input type="number" placeholder="Number" @input="setop">
+       <input type="number" placeholder="Number" @input="setukars">
+     </div>
+     <div class="output">
+       <div class="defalts" v-if="op===0 && ops===0">
+         No Inputs
+       </div>
+       <!-- <div class="defalts" v-else-if="addSelected===true">
+         {{crassi}}
+      </div> -->
+      <div class="defalts" v-else-if="subSelected===true">
+        {{crassi}}
+     </div>
+     <div class="defalts" v-else-if="mulSelected===true">
+      {{crassi}}
+   </div>
+   <div class="defalts" v-else-if="divSelected===true">
+    {{crassi}}
+ </div>
+ <div class="defalts" v-else-if="addSelected===true">
+  {{crassi}}
+</div>
+     </div>
+  </div>
+</body>
+</html>
